@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecturers</title>
+</head>
+<body>
+    <h1>Lecturers</h1>
+    
+    <a href="/">Home</a>
+
+    <ul>
+
+        <% lecturers.forEach(lecturer => { %>
+            <li>
+                <%= lecturer.name %> (<%= lecturer._id %>) (<%= lecturer.did %>) 
+                <a href="/lecturers/delete/<%= lecturer._id %>">Delete</a>
+            </li>
+        <% }) %>
+
+    </ul>
+</body>
+
+</html>

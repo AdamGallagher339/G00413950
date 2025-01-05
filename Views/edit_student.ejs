@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Student</title>
+</head>
+
+<body>
+    <h1>Edit Student</h1>
+
+    <form action="/students/edit/<%= student.sid %>" method="POST">
+
+        <label>Name:</label>
+        <input type="text" name="name" value="<%= student.name %>" required minlength="2" />
+
+        <label>Age:</label>
+        <input type="number" name="age" value="<%= student.age %>" required min="18" />
+
+        <button type="submit">Save</button>
+
+    </form>
+</body>
+
+</html>

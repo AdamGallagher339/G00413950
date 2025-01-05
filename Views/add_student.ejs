@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Student</title>
+</head>
+
+<body>
+    <h1>Add Student</h1>
+
+    <form action="/students/add" method="POST">
+
+        <label>ID:</label>
+        <input type="text" name="sid" id="sid" required minlength="4" />
+
+        <label>Name:</label>
+        <input type="text" name="name" id="name" required minlength="2" />
+
+        <label>Age:</label>
+        <input type="number" name="age" id="age" required min="18" />
+
+        <button type="submit">Add</button>
+        
+    </form>
+</body>
+
+</html>
